@@ -9,7 +9,19 @@ Info a library that allows you collecting info about your application in a simpl
 
 Just the following line to your Gemfile:
 
-    gem "info"
+```ruby
+gem 'info'
+```
+
+Now, create a initializer at `config/initializers/info.rb` with the following content:
+
+```ruby
+Info.setup do
+  enable!
+end
+```
+
+Read more about authorization and how to add collectors below.
 
 ## Usage
 

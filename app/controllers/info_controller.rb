@@ -7,7 +7,7 @@ class InfoController < ActionController::Base
 
   def show
     if Info.configuration.enabled
-      render json: Info.collect
+      render json: Info.collect(request)
     else
       render nothing: true
     end

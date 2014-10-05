@@ -5,6 +5,8 @@
 
 Info a library that allows you collecting info about your application in a simple JSON endpoint.
 
+![Info endpoint](https://raw.githubusercontent.com/fnando/info/master/screenshot.png)
+
 ## Installation
 
 Just the following line to your Gemfile:

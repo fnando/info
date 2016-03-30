@@ -12,7 +12,7 @@ Info a library that allows you collecting info about your application in a simpl
 Just the following line to your Gemfile:
 
 ```ruby
-gem 'info'
+gem "info"
 ```
 
 Now, create a initializer at `config/initializers/info.rb` with the following content:
@@ -31,19 +31,19 @@ To add your own collectors, just use the method `Info::Configuration#add`.
 
 ```ruby
 Info.setup do
-  add 'Rails', Rails.version
+  add "Rails", Rails.version
 end
 ```
 
-You can also use `Info.add 'Rails', Rails.version`.
+You can also use `Info.add "Rails", Rails.version`.
 
 Info comes with some default information; just load the `info/rails` file. You can do it on a initializer file (`config/initializers/info.rb`) or your Gemfile.
 
 ```ruby
-gem 'info', require: 'info/rails'
+gem "info", require: "info/rails"
 ```
 
-Rubygems that your app is using can be collected by loading the file `info/rubygems`.
+All Rubygems that your app is using can be collected by loading the file `info/rubygems`.
 
 You may need to clear all collectors; in this case just use `Info.collectors.clear`.
 
@@ -71,7 +71,7 @@ You can also use `Info.authorize(&block)`.
 
 ## Maintainer
 
-* Nando Vieira (<http://simplesideias.com.br>)
+* Nando Vieira (<http://nandovieira.com>)
 
 ## License:
 

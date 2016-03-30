@@ -1,8 +1,8 @@
-require 'forwardable'
+require "forwardable"
 
-require 'info/version'
-require 'info/engine'
-require 'info/configuration'
+require "info/version"
+require "info/engine"
+require "info/configuration"
 
 module Info
   class << self

@@ -1,12 +1,12 @@
+cache: bundler
+sudo: false
 rvm:
-  - 1.9.3
-  - 2.0.0
-  - 2.1.1
-script: bundle exec rspec
+  - "2.3.0"
+script: bundle exec rake
 gemfile:
   - Gemfile
-  - gemfiles/rails_3_0.gemfile
-  - gemfiles/rails_3_1.gemfile
-  - gemfiles/rails_3_2.gemfile
-  - gemfiles/rails_4_0.gemfile
   - gemfiles/rails_4_1.gemfile
+  - gemfiles/rails_4_2.gemfile
+  - gemfiles/rails_5_0.gemfile
+notifications:
+  email: false
